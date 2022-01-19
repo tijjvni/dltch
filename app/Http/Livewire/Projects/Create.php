@@ -22,7 +22,7 @@ class Create extends Component
     }
 
 
-    public function createClient(){
+    public function createProject(){
 
         $this->validate([
             'title' => 'required|string|max:255',

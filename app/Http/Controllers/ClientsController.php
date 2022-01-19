@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Client;
+use App\Models\Project;
 use App\Events\NewClient;
-use App\Http\Requests\ClientsStoreRequest;
 use App\Jobs\WelcomeClient;
 use App\Mail\ClientWelcome;
-use App\Models\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\ClientsStoreRequest;
 
 class ClientsController extends Controller
 {
@@ -20,6 +21,7 @@ class ClientsController extends Controller
     {
         $clients = Client::all();
         $projectsCount = Project::count();
+        
         
         return view('clients.index', compact('clients','projectsCount'));
     }

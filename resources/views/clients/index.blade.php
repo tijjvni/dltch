@@ -17,7 +17,7 @@
     </x-slot>
 
 	<!-- Component Start -->
-	<div class="grid md:grid-cols-2 gap-3 w-full p-5">
+	<div class="grid md:grid-cols-2 gap-2 w-full p-5">
 		
 		<!-- Tile 1 -->
 		<div class="flex items-center p-4 bg-white rounded">
@@ -53,4 +53,5 @@
     <div class="p-5">
         @livewire('clients.index',['clients' => $clients])
     </div>
+
 </x-app-layout>

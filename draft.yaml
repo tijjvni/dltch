@@ -9,6 +9,7 @@ models:
   Project:
     title: string:150
     description: text nullable
+    client_id: foreign:clients.id
     status: foreign:project_statuses.id
     relationships:
       belongsTo: Client

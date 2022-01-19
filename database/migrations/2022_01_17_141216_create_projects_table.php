@@ -19,7 +19,9 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->string('title', 150);
             $table->text('description')->nullable();
-            $table->foreignId('status')->constrained('project_statuses');
+            $table->boolean('active')->default(true);
+            $table->foreignId('client_id')->constrained();
+            $table->foreignId('status')->constrained('project_statuses')->nullable();
             $table->timestamps();
         });
 

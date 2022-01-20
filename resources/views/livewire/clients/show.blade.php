@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="text-gray-600 dark:text-gray-200 text-xs">
-                            {{ $project->status->name }}
+                            {{ $project->status }}
                         </div>
                         <button class="text-right flex justify-end">
                             <i class="fa fa-chevron-right"></i>

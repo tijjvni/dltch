@@ -10,7 +10,7 @@ class Show extends Component
     protected $clients;
 
     public function mount($client){
-        dd($this->client = $client);
+        $this->client = $client;
     }
     
     public function render()

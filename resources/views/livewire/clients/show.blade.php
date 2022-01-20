@@ -1,7 +1,7 @@
 <div>
 
     <!-- Code block starts -->
-    <div class="my-5 container px-6 mx-auto flex flex-row md:flex-row items-start md:items-center justify-between pb-4">
+    <div class="my-5 container px-6 mx-auto flex flex-row md:flex-row items-start md:items-center justify-between pb-4 border-b border-gray-300">
         <div class="flex-grow">
             <h4 class="text-2xl font-bold leading-tight text-gray-800 dark:text-gray-100">{{$client->name}}</h4>
             <p class="text-md leading-tight text-gray-800 dark:text-gray-100">
@@ -10,11 +10,10 @@
             <ul aria-label="current Status" class="flex flex-row items-start md:items-center text-gray-600 dark:text-gray-400 text-sm mt-3 gap-x-5">
                 <li class="flex items-center mt-2 md:mt-0">
                     <strong class="inline-flex items-center p-2 space-x-2 text-sm font-medium border border-gray-200 rounded">
-                        <span>Status:</span>
+                        <span>Status: </span>
                       
                         <span class="w-3 h-3 bg-green-600 rounded-full"></span>
-                      
-                        <span class="font-medium text-green-600">Active</span>
+                        <span class="font-medium text-green-600">active</span>
                       </strong>
                 </li>
             </ul>
@@ -23,24 +22,17 @@
             <button class="mr-3 bg-gray-200 dark:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out rounded hover:bg-gray-300 text-indigo-700 dark:hover:bg-gray-600 dark:text-indigo-600 px-5 py-2 text-sm">Update</button>
         </div>
     </div>
-
     <!-- Code block ends -->
-    <div class="relative text-center">
-        <span class="absolute inset-x-0 h-px -translate-y-1/2 bg-black/10 top-1/2"></span>
-      
-        <h2 class="relative inline-block px-4 text-xl font-bold text-center bg-white">
-          Projects
-        </h2>
-    </div>
-      
+
+
     <div class="container flex flex-col mx-auto w-full items-center justify-center">
         <div class="px-4 py-5 sm:px-6 flex w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
             <div class="flex-grow">
-                {{-- <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+                <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
                     Projects
-                </h3> --}}
+                </h3>
                 <p class="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
-                    Showing all projects
+                    All projects
                 </p>
             </div>
             <div class="flex-initial justify-end">

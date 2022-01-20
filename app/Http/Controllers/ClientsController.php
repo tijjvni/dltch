@@ -61,8 +61,6 @@ class ClientsController extends Controller
      */
     public function show(Request $request, Client $client)
     {
-        $client = Client::find($client);
-        dd($client);
         return view('clients.show', compact('client'));
     }
 }

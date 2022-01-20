@@ -27,7 +27,7 @@ class Create extends Component
             'title' => 'required|string|max:255',
             'description' => 'required|string|max:255',
             'client' => 'required|exists:clients,id',
-	    ]);
+        ]);
 
         $title = $this->title;
         $client = $this->client;
@@ -38,6 +38,7 @@ class Create extends Component
         $project->title = $title;
         $project->client_id = $client;
         $project->description = $description;
+        $project->status = 1;
         $project->save();
 
 

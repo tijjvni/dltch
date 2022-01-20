@@ -30,12 +30,12 @@
                                         <div class="flex items-center">
                                             <div class="flex-shrink-0 h-10 w-10">
                                                 <span class="py-2 px-4 inline-flex text-xs leading-5 font-semibold rounded-full bg-gray-100 text-gray-800">
-                                                    <span class="text-xl">{{ substr($project->name,0,1) }}</span>
+                                                    <span class="text-xl">{{ substr($project->title,0,1) }}</span>
                                                 </span>
                                             </div>
                                             <div class="ml-3">
                                                 <div class="text-sm font-medium text-gray-900">
-                                                    {{$project->name}}
+                                                    {{$project->title}}
                                                 </div>
                                             </div>
                                         </div>

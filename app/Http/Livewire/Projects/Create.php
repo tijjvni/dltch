@@ -11,16 +11,15 @@ class Create extends Component
 {
 
 
+    public $clients;
+
     public $title;
     public $client;
     public $description;
 
-    protected $allClients;
-
     public function mount(){
-        $this->allClients = Client::all();
-    }
 
+    }
 
     public function createProject(){
 
@@ -49,9 +48,6 @@ class Create extends Component
 
     public function render()
     {
-        $clients = $this->allClients;
-        return view('livewire.projects.create',[
-            'clients' => $clients
-        ]);
+        return view('livewire.projects.create');
     }
 }

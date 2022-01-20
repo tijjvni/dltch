@@ -73,10 +73,7 @@
                   class="flex items-center justify-between px-5 py-3 mt-8 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 group"
                 >
                   <span class="text-lg font-medium group-hover:text-white">
-                    Create First Client
-                  </span>
-              
-                  <span class="flex-shrink-0 p-2 ml-4 bg-white border border-blue-600 rounded-full">
+                    Create First Client 
                     <i class="fa fa-chevron-right"></i>
                   </span>
                 </a>

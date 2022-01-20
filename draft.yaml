@@ -7,11 +7,14 @@ models:
       hasMany: Project
   ProjectStatus:
     name: string:50
+    relationships: 
+      hasMany: Project
+
   Project:
     title: string:150
     description: text nullable
     client_id: foreign:clients.id
-    status: foreign:project_statuses.id
+    status_id: foreign:project_statuses.id
     relationships:
       belongsTo: Client
       hasMany: Issue

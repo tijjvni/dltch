@@ -56,6 +56,26 @@
                 </div>
             </div>
         </div>
+        
+        @if(!$clients->count())
+            <div class="relative p-8 text-center border border-gray-200 rounded-lg">
+                <h2 class="text-xl font-medium">
+                No Client
+                </h2>
+            
+                <p class="mt-4 text-sm text-gray-500">
+                No client yet
+                </p>
+            
+                <a
+                href=""
+                class="inline-flex items-center px-5 py-3 mt-8 font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+                >
+                Create First Client <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+        @endif            
+
     </div>
 
 

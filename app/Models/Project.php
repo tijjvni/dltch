@@ -37,7 +37,7 @@ class Project extends Model
 
     public function status()
     {
-        return $this->belongsTo(ProjectStatus::class);
+        return $this->belongsTo(ProjectStatus::class, 'status_id');
     }
 
     public function issues()

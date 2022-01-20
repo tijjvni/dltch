@@ -36,7 +36,7 @@ class Create extends Component
 
         $project = new Project;
         $project->title = $title;
-        $project->client = $client;
+        $project->client_id = $client;
         $project->description = $description;
         $project->save();
 

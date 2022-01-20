@@ -45,6 +45,7 @@
             </x-jet-action-message>
 
             <x-jet-button wire:loading.attr="disabled" wire:target="createProject">
+                <i wirde:loading  wire:target="createProject" class="fa fa-spinner fa- spin spin"></i>
                 {{ __('Save') }}
             </x-jet-button>
         </x-slot>

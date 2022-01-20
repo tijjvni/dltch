@@ -18,7 +18,7 @@ class Create extends Component
     public $description;
 
     public function mount(){
-
+        $this->clients = Client::all();
     }
 
     public function createProject(){

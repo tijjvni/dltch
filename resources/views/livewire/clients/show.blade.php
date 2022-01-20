@@ -73,29 +73,30 @@
                     </div>
                 </li>            
             @empty
+                    
+
+                <div class="my-5 max-w-xl mx-auto text-center">
+                    <h2 class="text-xl font-bold sm:text-3xl">
+                        No Project
+                    </h2>
                 
-            <div class="max-w-xl mx-auto text-center">
-                <h2 class="text-base font-bold sm:text-xl">
-                  No projects
-                </h2>
-              
-                <p class="mx-auto mt-4 text-gray-500 text-sm">
-                    No project yet
-                </p>
-              
-                <a
-                    href="/projects/create?c={{$client->id}}"
+                    <p class="text-sm mx-auto mt-4 text-gray-500">
+                        No project yet
+                    </p>
+                
+                    <a
+                    href="{{ route('projects.create')}}"
                     class="flex items-center justify-between px-5 py-3 mt-8 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 group"
-                >             
-                  <span class="text-lg font-medium group-hover:text-white">
-                    Create first project
-                  </span>
-              
-                  <span class="flex-shrink-0 p-2 ml-4 bg-white border border-blue-600 rounded-full">
-                    <i class="fa fa-chevron-right"></i>
-                  </span>
-                </a>
-              </div>
+                    >
+                    <span class="text-lg font-medium group-hover:text-white">
+                        Create First Project
+                    </span>
+                
+                    <span class="flex-shrink-0 p-2 ml-4 bg-white border border-blue-600 rounded-full">
+                        <i class="fa fa-chevron-right"></i>
+                    </span>
+                    </a>
+                </div>
 
             @endforelse
             

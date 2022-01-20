@@ -57,23 +57,31 @@
             </div>
         </div>
         
-        @if(!$clients->count())
-            <div class="relative p-8 text-center border border-gray-200 rounded-lg">
-                <h2 class="text-xl font-medium">
-                No Client
+        @if(!count($clients))
+
+            <div class="my-5 max-w-xl mx-auto text-center">
+                <h2 class="text-xl font-bold sm:text-3xl">
+                    No Client
                 </h2>
-            
-                <p class="mt-4 text-sm text-gray-500">
-                No client yet
+              
+                <p class="text-sm mx-auto mt-4 text-gray-500">
+                    No client yet
                 </p>
-            
+              
                 <a
-                href=""
-                class="inline-flex items-center px-5 py-3 mt-8 font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-500"
+                  href="{{ route('clients.create')}}"
+                  class="flex items-center justify-between px-5 py-3 mt-8 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 group"
                 >
-                Create First Client <i class="fa fa-chevron-right"></i>
+                  <span class="text-lg font-medium group-hover:text-white">
+                    Create First Client
+                  </span>
+              
+                  <span class="flex-shrink-0 p-2 ml-4 bg-white border border-blue-600 rounded-full">
+                    <i class="fa fa-chevron-right"></i>
+                  </span>
                 </a>
             </div>
+
         @endif            
 
     </div>

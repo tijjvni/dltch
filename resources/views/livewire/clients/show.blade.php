@@ -15,7 +15,6 @@
                     @if($client->user->is_active)
                         <div class="bg-green-100 h-8 w-24 mb-4 md:mb-0 rounded-md flex items-center justify-center">
                             <div tabindex="0" aria-label="green background badge" class="focus:outline-none flex items-center">
-                                <div class="h-1 w-1 rounded-full bg-green-700 mr-1"></div>
                                 <span class="text-xs text-green-700 font-normal">Active</span>
                             </div>
                         </div>                
@@ -48,52 +47,57 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                <button class="ransition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm">New project</button>
+                <a href="/projects/create?c={{$client->id}}">
+                    <button class="ransition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm">New project</button>
+                </a>
             </div> 
         </div>
         <ul class="w-full flex flex-col">
-            <li class="border-gray-400 flex flex-row mb-2">
-                <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                    <div class="flex-1 pl-1 md:mr-16">
-                        <div class="font-medium dark:text-white">
-                            Jean Marc
+            @forelse ($client->projects as $project)
+                <li class="border-gray-400 flex flex-row mb-2">
+                    <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                        <div class="flex-1 pl-1 md:mr-16">
+                            <div class="font-medium dark:text-white">
+                                {{ $project->title }}
+                            </div>
+                            <div class="text-gray-600 dark:text-gray-200 text-xs">
+                                {{ $project->description }}
+                            </div>
                         </div>
-                        <div class="text-gray-600 dark:text-gray-200 text-sm">
-                            Developer
+                        <div class="text-gray-600 dark:text-gray-200 text-xs">
+                            {{ $project->status->name }}
                         </div>
+                        <button class="text-right flex justify-end">
+                            <i class="fa fa-chevron-right"></i>
+                        </button>
                     </div>
-                    <div class="text-gray-600 dark:text-gray-200 text-xs">
-                        6:00 AM
-                    </div>
-                    <button class="w-24 text-right flex justify-end">
-                        <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-            </li>
-            <li class="border-gray-400 flex flex-row mb-2">
-                <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                    <div class="flex-1 pl-1 md:mr-16">
-                        <div class="font-medium dark:text-white">
-                            Jean Marc
-                        </div>
-                        <div class="text-gray-600 dark:text-gray-200 text-sm">
-                            Developer
-                        </div>
-                    </div>
-                    <div class="text-gray-600 dark:text-gray-200 text-xs">
-                        6:00 AM
-                    </div>
-                    <button class="w-24 text-right flex justify-end">
-                        <svg width="12" fill="currentColor" height="12" class="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45l166-166q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-            </li>
+                </li>            
+            @empty
+                
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-base font-bold sm:text-xl">
+                  No projects
+                </h2>
+              
+                <p class="mx-auto mt-4 text-gray-500 text-sm">
+                    No project yet
+                </p>
+              
+                <a
+                    href="/projects/create?c={{$client->id}}"
+                    class="flex items-center justify-between px-5 py-3 mt-8 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-600 group"
+                >             
+                  <span class="text-lg font-medium group-hover:text-white">
+                    Create first project
+                  </span>
+              
+                  <span class="flex-shrink-0 p-2 ml-4 bg-white border border-blue-600 rounded-full">
+                    <i class="fa fa-chevron-right"></i>
+                  </span>
+                </a>
+              </div>
+
+            @endforelse
             
         </ul>
     </div>

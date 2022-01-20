@@ -4,6 +4,7 @@ models:
     user_id: foreign:users.id
     relationships:
       belongsTo: User
+      hasMany: Project
   ProjectStatus:
     name: string:50
   Project:

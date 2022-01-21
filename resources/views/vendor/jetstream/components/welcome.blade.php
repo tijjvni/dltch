@@ -59,7 +59,7 @@
     <div class="p-6 border-t border-gray-200">        
         <div class="flex items-center">
             <i class="fa fa-user-secret fa-3x text-gray-400"></i>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ route('staff.index') }}">Staff</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="">Staff</a></div>
         </div>
 
         <div class="ml-12">
@@ -72,7 +72,7 @@
     <div class="p-6 border-t border-gray-200 md:border-l">
         <div class="flex items-center">
             <i class="fa fa-lock fa-3x text-gray-400"></i>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ route('admin.index') }}">Admin</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="">Admin</a></div>
         </div>
 
         <div class="ml-12">

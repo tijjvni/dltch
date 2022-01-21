@@ -13,7 +13,7 @@
     <div class="p-6">
         <div class="flex items-center">
             <i class="fa fa-task fa-3x text-gray-400"></i>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ route('projectts.index') }}">Projects</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="{{ route('projects.index') }}">Projects</a></div>
         </div>
 
         <div class="ml-12">

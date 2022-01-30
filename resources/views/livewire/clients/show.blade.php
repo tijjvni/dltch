@@ -13,7 +13,7 @@
                         <span>Status: </span>
                       
                         <span class="w-3 h-3 bg-green-600 rounded-full"></span>
-                        <span class="font-medium text-green-600">active</span>
+                        <span class="font-medium text-green-600"> active</span>
                       </strong>
                 </li>
             </ul>

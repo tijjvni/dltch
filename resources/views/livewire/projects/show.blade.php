@@ -17,7 +17,6 @@
             </ul>
         </div>
         <div class="flex-initial">
-            {{-- <button class="mx-2 my-2 bg-white transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-sm">Update</button> --}}
             <strong class="inline-block px-3 py-1 text-xs font-semibold text-green-600 bg-green-100 rounded-sm">
                 On going
             </strong>      
@@ -25,4 +24,23 @@
     </div>
     <!-- Code block ends -->
     
+
+    <div class="container flex flex-col mx-auto w-full items-center justify-center">
+        <div class="px-4 py-5 sm:px-6 flex w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
+            <div class="flex-grow">
+                <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+                    Issues
+                </h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
+                    All project's issues
+                </p>
+            </div>
+            <div class="flex-initial justify-end">
+            <button class="mx-2 my-2 bg-white transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-sm"> + </button>
+            </div> 
+        </div>
+        <ul class="w-full flex flex-col">
+
+        </ul>
+    </div>
 </div>

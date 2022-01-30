@@ -1,6 +1,15 @@
 <div>
     
     <!-- This example requires Tailwind CSS v2.0+ -->
+    <nav class="flex text-sm border-b border-gray-100 text-font-medium">
+        <a href="" class="p-4 -mb-px border-b border-indigo-500 text-indigo-500">
+            All
+        </a>
+        <a href="" class="p-4 -mb-px border-b border-transparent hover:text-indigo-500">
+            Active
+        </a>        
+    </nav>
+
     <div class="flex flex-col">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">

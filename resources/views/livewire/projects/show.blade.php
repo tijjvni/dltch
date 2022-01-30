@@ -36,11 +36,26 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-            <button class="mx-2 my-2 bg-white transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-sm"> + </button>
+            <button class="mx-2 my-2 bg-white border transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-lg"> + </button>
             </div> 
         </div>
-        <ul class="w-full flex flex-col">
+        <div class="px-4 py-5 sm:px-6 flex w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
 
-        </ul>
+            <div class="py-2 flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center">
+                <a href="#" class="flex flex-row items-center focus:outline-none focus:shadow-outline rounded-lg">
+                    <img class="rounded-full h-8 w-8 object-cover" src="https://images.unsplash.com/photo-1520065786657-b71a007dd8a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=80" alt="">
+                    <p class="ml-2 text-base font-medium">Jon Doe</p>
+                </a>
+                </div>
+                <div class="flex flex-row items-center">
+                <p class="text-xs font-semibold text-gray-500">2 hours ago</p>
+                </div>
+            </div>
+            <div class="py-2">
+                <p class="text-gray-300 leading-snug">Started project.</p>
+            </div>          
+
+        </div>
     </div>
 </div>

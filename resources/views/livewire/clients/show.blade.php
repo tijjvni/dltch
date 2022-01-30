@@ -43,7 +43,7 @@
         <ul class="w-full flex flex-col">
             @forelse ($client->projects as $project)
                 <a href="{{ route('projects.show', ['project' => $project->id]) }}">
-                    <li class="border-gray-400 flex flex-row mb-2">
+                    <li class="flex flex-row mb-2">
                         <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
                             <div class="flex-1 pl-1 md:mr-16">
                                 <div class="font-medium dark:text-white">

@@ -1,7 +1,7 @@
 <div>
 
     <!-- Code block starts -->
-    <div class="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between pb-4 border-b border-gray-300">
+    <div class="my-6 lg:my-12 container px-6 mx-auto flex flex-row lg:flex-row items-start lg:items-center justify-between pb-4 border-b border-gray-300">
         <div class="flex-grow">
             <h4 class="text-2xl font-bold leading-tight text-gray-800 dark:text-gray-100">{{$client->name}}</h4>
             <p class="text-md leading-tight text-gray-800 dark:text-gray-100">

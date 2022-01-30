@@ -1,7 +1,7 @@
 <div>
 
     <!-- Code block starts -->
-    <div class="my-5 container px-6 mx-auto flex flex-row md:flex-row items-start md:items-center justify-between pb-4 border-b border-gray-300">
+    <div class="my-5 container px-6 mx-auto flex flex-row md:flex-row items-start md:items-center justify-between pb-4 border-b border-gray-300 mb-5">
         <div class="flex-grow">
             <h4 class="text-2xl font-bold leading-tight text-gray-800 dark:text-gray-100">{{$client->name}}</h4>
             <p class="text-md leading-tight text-gray-800 dark:text-gray-100">
@@ -43,26 +43,27 @@
         </div>
         <ul class="w-full flex flex-col">
             @forelse ($client->projects as $project)
-                <li class="border-gray-400 flex flex-row mb-2">
-                    <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
-                        <div class="flex-1 pl-1 md:mr-16">
-                            <div class="font-medium dark:text-white">
-                                {{ $project->title }}
+                <a href="{{ route('projects.show', ['project' => $project->id]) }}">
+                    <li class="border-gray-400 flex flex-row mb-2">
+                        <div class="shadow border select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4">
+                            <div class="flex-1 pl-1 md:mr-16">
+                                <div class="font-medium dark:text-white">
+                                    {{ $project->title }}
+                                </div>
+                                <div class="text-gray-600 dark:text-gray-200 text-xs">
+                                    {{ $project->description }}
+                                </div>
                             </div>
                             <div class="text-gray-600 dark:text-gray-200 text-xs">
-                                {{ $project->description }}
+                                {{ $project->status }}
                             </div>
+                            <button class="text-right flex justify-end">
+                                <i class="fa fa-chevron-right"></i>
+                            </button>
                         </div>
-                        <div class="text-gray-600 dark:text-gray-200 text-xs">
-                            {{ $project->status }}
-                        </div>
-                        <button class="text-right flex justify-end">
-                            <i class="fa fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </li>            
-            @empty
-                    
+                    </li>            
+                </a>
+            @empty                    
 
                 <div class="my-5 max-w-xl mx-auto text-center">
                     <h2 class="text-xl font-bold sm:text-3xl">

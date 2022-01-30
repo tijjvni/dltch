@@ -17,7 +17,7 @@
     </x-slot>
 
     <div class="p-5">
-        @livewire('clients.show', ['client' => $client])
+        @livewire('projects.show', ['project' => $project])
     </div>
     
 </x-app-layout>

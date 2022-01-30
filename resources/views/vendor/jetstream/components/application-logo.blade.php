@@ -1,1 +1,1 @@
-{{ get_env('APP_NAME')}}
+{{ getenv('APP_NAME') }}

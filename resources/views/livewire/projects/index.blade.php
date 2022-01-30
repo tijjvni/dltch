@@ -1,15 +1,17 @@
 <div>
-    
-    <!-- This example requires Tailwind CSS v2.0+ -->
-    <nav class="flex text-sm border-b border-gray-100 text-font-medium">
-        <a href="" class="p-4 -mb-px border-b border-indigo-500 text-indigo-500">
-            All
-        </a>
-        <a href="" class="p-4 -mb-px border-b border-transparent hover:text-indigo-500">
-            Active
-        </a>        
-    </nav>
 
+    <div class="flex border-b border-gray-200 dark:border-gray-700">
+        <button class="flex items-center h-10 px-2 py-2 -mb-px text-center text-indigo-600 bg-transparent border-b-2 border-indigo-500 sm:px-4 -px-1 dark:border-indigo-400 dark:text-indigo-300 whitespace-nowrap focus:outline-none">
+          <i class="fa fa-list"></i>
+          <span class="mx-1 text-sm sm:text-base"> All </span>
+        </button>
+    
+        <button class="flex items-center h-10 px-2 py-2 -mb-px text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:px-4 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
+            <i class="fa fa-folder-open"></i>
+          <span class="mx-1 text-sm sm:text-base"> Active </span>
+        </button>
+    </div>
+    
     <div class="flex flex-col">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">

@@ -1,7 +1,7 @@
 <div>
 
     <!-- Code block starts -->
-    <div class="my-5 container px-6 mx-auto flex flex-row md:flex-row items-start md:items-center justify-between pb-4">
+    <div class="my-6 lg:my-12 container px-6 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between pb-4 border-b border-gray-300">
         <div class="flex-grow">
             <h4 class="text-2xl font-bold leading-tight text-gray-800 dark:text-gray-100">{{$client->name}}</h4>
             <p class="text-md leading-tight text-gray-800 dark:text-gray-100">
@@ -23,8 +23,6 @@
         </div>
     </div>
     <!-- Code block ends -->
-
-    <hr class="border-b border-gray-300"/>
 
     <div class="container flex flex-col mx-auto w-full items-center justify-center">
         <div class="px-4 py-5 sm:px-6 flex w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

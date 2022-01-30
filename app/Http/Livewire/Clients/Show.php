@@ -7,7 +7,7 @@ use Livewire\Component;
 class Show extends Component
 {
 
-    protected $clients;
+    protected $client;
 
     public function mount($client){
         $this->client = $client;

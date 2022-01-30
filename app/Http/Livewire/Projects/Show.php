@@ -6,8 +6,18 @@ use Livewire\Component;
 
 class Show extends Component
 {
+
+    protected $project;
+
+    public function mount($project){
+        $this->project = $project;
+    }
+    
     public function render()
     {
-        return view('livewire.projects.show');
+        $project = $this->project;
+        return view('livewire.projects.show',[
+            'project' => $project
+        ]);
     }
 }

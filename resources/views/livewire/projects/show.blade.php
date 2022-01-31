@@ -11,7 +11,7 @@
                 <li class="flex items-center mt-2 md:mt-0">
                     <strong class="inline-flex items-center p-2 space-x-2 text-sm font-medium border border-gray-200 rounded">
                         <span>For: </span>  
-                        <a href="{{ route('clients.show',[client => $project->client->id]) }}">
+                        <a href="{{ route('clients.show',['client' => $project->client->id]) }}">
                             <span class="font-bold"> &nbsp;&nbsp;{{$project->client->name}} </span>                            
                         </a>                    
                       </strong>

@@ -13,6 +13,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+        @livewireStyles
 
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
@@ -40,6 +41,9 @@
         </div>
 
         @stack('modals')
+
+        @livewireScripts
+
 
         @livewire('livewire-ui-modal')
         @livewireUIScripts

@@ -9,8 +9,11 @@ class Show extends Component
 
     protected $project;
 
+    public $addIssueModal;
+
     public function mount($project){
         $this->project = $project;
+        $this->addIssueModal = false;
     }
     
     public function render()

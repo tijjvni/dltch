@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "721d49a07282e4c00b6e1f0738d4ef82",
+    "content-hash": "d2f1d53b9a71357326a6e416665567ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -64,16 +64,16 @@
         },
         {
             "name": "bacon/bacon-qr-code",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bacon/BaconQrCode.git",
-                "reference": "f73543ac4e1def05f1a70bcd1525c8a157a1ad09"
+                "reference": "7190fc6c20370e0e93da6717b182b8249d5b8e71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/f73543ac4e1def05f1a70bcd1525c8a157a1ad09",
-                "reference": "f73543ac4e1def05f1a70bcd1525c8a157a1ad09",
+                "url": "https://api.github.com/repos/Bacon/BaconQrCode/zipball/7190fc6c20370e0e93da6717b182b8249d5b8e71",
+                "reference": "7190fc6c20370e0e93da6717b182b8249d5b8e71",
                 "shasum": ""
             },
             "require": {
@@ -82,8 +82,9 @@
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "phly/keep-a-changelog": "^1.4",
+                "phly/keep-a-changelog": "^2.1",
                 "phpunit/phpunit": "^7 | ^8 | ^9",
+                "spatie/phpunit-snapshot-assertions": "^4.2.9",
                 "squizlabs/php_codesniffer": "^3.4"
             },
             "suggest": {
@@ -111,9 +112,9 @@
             "homepage": "https://github.com/Bacon/BaconQrCode",
             "support": {
                 "issues": "https://github.com/Bacon/BaconQrCode/issues",
-                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.4"
+                "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.5"
             },
-            "time": "2021-06-18T13:26:35+00:00"
+            "time": "2022-01-31T00:43:09+00:00"
         },
         {
             "name": "brick/math",
@@ -398,16 +399,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "a4b37db6f186b6843474189b424aed6a7cc5de4b"
+                "reference": "5b6eb6c8ce65ebdc60b0c0960a676cf76758dbf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/a4b37db6f186b6843474189b424aed6a7cc5de4b",
-                "reference": "a4b37db6f186b6843474189b424aed6a7cc5de4b",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/5b6eb6c8ce65ebdc60b0c0960a676cf76758dbf2",
+                "reference": "5b6eb6c8ce65ebdc60b0c0960a676cf76758dbf2",
                 "shasum": ""
             },
             "require": {
@@ -489,7 +490,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/3.3.0"
+                "source": "https://github.com/doctrine/dbal/tree/3.3.1"
             },
             "funding": [
                 {
@@ -505,7 +506,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-18T00:13:52+00:00"
+            "time": "2022-01-30T17:50:59+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1543,16 +1544,16 @@
         },
         {
             "name": "laravel/fortify",
-            "version": "v1.10.0",
+            "version": "v1.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/fortify.git",
-                "reference": "d6b990f4b72ee8ef1654a408316ba9feb9530ac7"
+                "reference": "a85e04a6ce1c704cd88970d6cbbc78b4b1b8ca5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/fortify/zipball/d6b990f4b72ee8ef1654a408316ba9feb9530ac7",
-                "reference": "d6b990f4b72ee8ef1654a408316ba9feb9530ac7",
+                "url": "https://api.github.com/repos/laravel/fortify/zipball/a85e04a6ce1c704cd88970d6cbbc78b4b1b8ca5f",
+                "reference": "a85e04a6ce1c704cd88970d6cbbc78b4b1b8ca5f",
                 "shasum": ""
             },
             "require": {
@@ -1602,20 +1603,20 @@
                 "issues": "https://github.com/laravel/fortify/issues",
                 "source": "https://github.com/laravel/fortify"
             },
-            "time": "2022-01-25T19:43:53+00:00"
+            "time": "2022-02-01T16:24:24+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v8.81.0",
+            "version": "v8.82.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9cc0efd724ce67a190b1695ba31a27bbb1ae9177"
+                "reference": "411d5243c58cbf12b0fc89cab1ceb50088968c27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9cc0efd724ce67a190b1695ba31a27bbb1ae9177",
-                "reference": "9cc0efd724ce67a190b1695ba31a27bbb1ae9177",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/411d5243c58cbf12b0fc89cab1ceb50088968c27",
+                "reference": "411d5243c58cbf12b0fc89cab1ceb50088968c27",
                 "shasum": ""
             },
             "require": {
@@ -1775,20 +1776,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-01-25T16:41:46+00:00"
+            "time": "2022-02-01T16:13:57+00:00"
         },
         {
             "name": "laravel/jetstream",
-            "version": "v2.6.3",
+            "version": "v2.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "098b8c60f88bc09c27dfe67266eca33998b35184"
+                "reference": "6c607ee1db6bdc0238e56429a0800a5c9cdbfb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/098b8c60f88bc09c27dfe67266eca33998b35184",
-                "reference": "098b8c60f88bc09c27dfe67266eca33998b35184",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/6c607ee1db6bdc0238e56429a0800a5c9cdbfb5e",
+                "reference": "6c607ee1db6bdc0238e56429a0800a5c9cdbfb5e",
                 "shasum": ""
             },
             "require": {
@@ -1841,7 +1842,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2022-01-25T19:51:52+00:00"
+            "time": "2022-01-27T17:46:11+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -1909,16 +1910,16 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.0.5",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "25de3be1bca1b17d52ff0dc02b646c667ac7266c"
+                "reference": "65c9faf50d567b65d81764a44526545689e3fe63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/25de3be1bca1b17d52ff0dc02b646c667ac7266c",
-                "reference": "25de3be1bca1b17d52ff0dc02b646c667ac7266c",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/65c9faf50d567b65d81764a44526545689e3fe63",
+                "reference": "65c9faf50d567b65d81764a44526545689e3fe63",
                 "shasum": ""
             },
             "require": {
@@ -1964,7 +1965,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2021-11-30T15:53:04+00:00"
+            "time": "2022-02-01T16:29:39+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -2502,65 +2503,6 @@
                 }
             ],
             "time": "2021-11-21T11:48:40+00:00"
-        },
-        {
-            "name": "livewire-ui/modal",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wire-elements/modal.git",
-                "reference": "6eedd5fae9e3d7def7afa6fab0b2bd236294b44d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wire-elements/modal/zipball/6eedd5fae9e3d7def7afa6fab0b2bd236294b44d",
-                "reference": "6eedd5fae9e3d7def7afa6fab0b2bd236294b44d",
-                "shasum": ""
-            },
-            "require": {
-                "livewire/livewire": "^2.0",
-                "php": "^7.4|^8.0",
-                "spatie/laravel-package-tools": "^1.9"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^6.15",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LivewireUI\\Modal\\LivewireModalServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LivewireUI\\Modal\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Philo Hermans",
-                    "email": "me@philohermans.com"
-                }
-            ],
-            "description": "Laravel Livewire modal component",
-            "keywords": [
-                "laravel",
-                "livewire",
-                "modal"
-            ],
-            "support": {
-                "issues": "https://github.com/wire-elements/modal/issues",
-                "source": "https://github.com/wire-elements/modal/tree/1.0.4"
-            },
-            "abandoned": "wire-elements/modal",
-            "time": "2022-01-18T11:08:35+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -4053,65 +3995,6 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
-        },
-        {
-            "name": "spatie/laravel-package-tools",
-            "version": "1.11.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "fd75af77d0bbf221f33369186df16da704bebebd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/fd75af77d0bbf221f33369186df16da704bebebd",
-                "reference": "fd75af77d0bbf221f33369186df16da704bebebd",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^7.0|^8.0|^9.0",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.4",
-                "orchestra/testbench": "^5.0|^6.23|^7.0",
-                "phpunit/phpunit": "^9.4",
-                "spatie/test-time": "^1.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\LaravelPackageTools\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Tools for creating Laravel packages",
-            "homepage": "https://github.com/spatie/laravel-package-tools",
-            "keywords": [
-                "laravel-package-tools",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.11.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/spatie",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-01-11T16:14:23+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -6728,64 +6611,6 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.10.0"
             },
             "time": "2021-03-09T10:59:23+00:00"
-        },
-        {
-            "name": "wire-elements/modal",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wire-elements/modal.git",
-                "reference": "6eedd5fae9e3d7def7afa6fab0b2bd236294b44d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wire-elements/modal/zipball/6eedd5fae9e3d7def7afa6fab0b2bd236294b44d",
-                "reference": "6eedd5fae9e3d7def7afa6fab0b2bd236294b44d",
-                "shasum": ""
-            },
-            "require": {
-                "livewire/livewire": "^2.0",
-                "php": "^7.4|^8.0",
-                "spatie/laravel-package-tools": "^1.9"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^6.15",
-                "phpunit/phpunit": "^9.5"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "LivewireUI\\Modal\\LivewireModalServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "LivewireUI\\Modal\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Philo Hermans",
-                    "email": "me@philohermans.com"
-                }
-            ],
-            "description": "Laravel Livewire modal component",
-            "keywords": [
-                "laravel",
-                "livewire",
-                "modal"
-            ],
-            "support": {
-                "issues": "https://github.com/wire-elements/modal/issues",
-                "source": "https://github.com/wire-elements/modal/tree/1.0.4"
-            },
-            "time": "2022-01-18T11:08:35+00:00"
         }
     ],
     "packages-dev": [

@@ -7,7 +7,7 @@ use Livewire\Component;
 class Show extends Component
 {
 
-    protected $project;
+    public $project;
 
     public $addIssue;
 
@@ -22,9 +22,9 @@ class Show extends Component
 
     public function render()
     {
-        $project = $this->project;
+        // $project = $this->project;
         return view('livewire.projects.show',[
-            'project' => $project
+            // 'project' => $project
         ]);
     }
 }

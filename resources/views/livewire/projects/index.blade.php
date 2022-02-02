@@ -1,13 +1,13 @@
 <div>
 
-    <div class="w-full flex mb-1 dark:border-gray-700">
+    <div class="w-full flex mb-2 dark:border-gray-700">
         <button class="flex-1 items-center h-10 px-2 py-2 -mb-px text-center text-indigo-600 bg-transparent border-b-2 border-indigo-500 sm:px-4 -px-1 dark:border-indigo-400 dark:text-indigo-300 whitespace-nowrap focus:outline-none">
           <i class="fa fa-list"></i>
-          <span class="mx-1 text-sm sm:text-base"> All </span>
+          <span class="mx-1 text-sm sm:text-base"> Active </span>
         </button>  
         <button class="flex-1 items-center h-10 px-2 py-2 -mb-px text-center text-gray-700 bg-transparent border-b-2 border-transparent sm:px-4 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
             <i class="fa fa-folder-open"></i>
-          <span class="mx-1 text-sm sm:text-base"> Active </span>
+            <span class="mx-1 text-sm sm:text-base"> All </span>
         </button>
     </div>
     

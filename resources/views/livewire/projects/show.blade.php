@@ -38,7 +38,7 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                <button wire:click="addIssueModal()" class="mx-2 my-2 bg-white border transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-lg"> + </button>
+                <button wire:click="addIssueModal" class="mx-2 my-2 bg-white border transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-lg"> + </button>
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-200 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
@@ -91,7 +91,7 @@
             form content
         </x-slot>
         <x-slot name="footer">
-            <button wire:click="addIssueModal()" class="mx-2 my-2 bg-white border transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-lg">Cancel </button>
+            <button wire:click="addIssueModal" class="mx-2 my-2 bg-white border transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-lg">Cancel </button>
         </x-slot>
         
     </x-jet-dialog-modal>

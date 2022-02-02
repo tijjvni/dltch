@@ -46,7 +46,6 @@
 
 
 
-        @livewire('livewire-ui-modal')
 
     </body>
 </html>

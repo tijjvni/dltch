@@ -12,6 +12,7 @@ class Show extends Component
     public $addIssue;
 
     public function mount($project){
+        $this->project = $project;
         $this->addIssue = false;
     }
     

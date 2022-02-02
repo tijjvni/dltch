@@ -22,12 +22,12 @@
 		<!-- Tile 1 -->
 		<div class="flex items-center p-4 bg-white rounded">
 			<div class="flex flex-shrink-0 items-center justify-center bg-indigo-200 h-16 w-16 rounded">
-				<i class="fa fa-tasks text-indigo-600"></i>
+				<i class="fa fa-folder-open text-indigo-600"></i>
 			</div>
 			<div class="flex-grow flex flex-col ml-4">
 				<span class="text-xl font-bold">{{ count($projects) }} </span>
 				<div class="flex items-center justify-between">
-					<span class="text-gray-500">All Projects</span>
+					<span class="text-gray-500">Active Projects</span>
 					<!-- <span class="text-green-500 text-sm font-semibold ml-2">+12.6%</span> -->
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 				{{-- <span class="text-xl font-bold">{{ count($projects) }} </span> --}}
 				<span class="text-xl font-bold">{{ count($projects) }} </span>
 				<div class="flex items-center justify-between">
-					<span class="text-gray-500">Active Projects</span>
+					<span class="text-gray-500">All Projects</span>
 				</div>
 			</div>
 		</div>

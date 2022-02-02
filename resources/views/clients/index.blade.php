@@ -23,7 +23,7 @@
 		<!-- Tile 2 -->
 		<div class="flex items-center p-4 bg-white rounded">
 			<div class="flex flex-shrink-0 items-center justify-center bg-indigo-200 h-16 w-16 rounded">
-				<i class="fa fa-folder-open text-indigo-600"></i>
+				<i class="fa fa-tasks text-indigo-600"></i>
 			</div>
 			<div class="flex-grow flex flex-col ml-4">
 				<span class="text-xl font-bold">{{ $projectsCount }}</span>
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 		</div>
-
+				
 		<!-- Tile 1 -->
 		<div class="flex items-center p-4 bg-white rounded">
 			<div class="flex flex-shrink-0 items-center justify-center bg-indigo-200 h-16 w-16 rounded">

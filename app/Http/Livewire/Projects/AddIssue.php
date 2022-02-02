@@ -2,9 +2,9 @@
 
 namespace App\Http\Livewire\Projects;
 
-use Livewire\Component;
+use LivewireUI\Modal\ModalComponent;
 
-class AddIssue extends Component
+class AddIssue extends ModalComponent
 {
     public function render()
     {

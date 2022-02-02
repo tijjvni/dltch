@@ -1,3 +1,3 @@
 <div>
-    wire:click
+    add:issue
 </div>

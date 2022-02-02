@@ -88,7 +88,7 @@
             add issue
         </x-slot>
         <x-slot name="content">
-            form content
+            form content.
         </x-slot>
         <x-slot name="footer">
             <button wire:click="addIssueModal" class="mx-2 my-2 bg-white border transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-700 focus:ring-white hover:bg-gray-100 rounded text-indigo-700 px-6 py-2 text-lg"> + </button>

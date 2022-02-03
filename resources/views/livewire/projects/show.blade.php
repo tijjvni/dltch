@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div class="hidden" x-data="{ open: false }">
+    <div x-data="{ open: false }">
         <!-- Button -->
         <button x-on:click="open = true" type="button" class="bg-white border border-black px-4 py-2 focus:outline-none focus:ring-4 focus:ring-aqua-400">
             Open dialog
@@ -98,7 +98,7 @@
             aria-modal="true"
             x-id="['modal-title']"
             :aria-labelledby="$id('modal-title')"
-            class="fixed inset-0 overflow-y-auto"
+            class="fixed hidden inset-0 overflow-y-auto"
         >
             <!-- Overlay -->
             <div x-show="open" x-transition.opacity class="fixed inset-0 bg-gray-700 bg-opacity-50"></div>

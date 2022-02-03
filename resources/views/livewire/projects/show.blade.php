@@ -98,7 +98,7 @@
             aria-modal="true"
             x-id="['modal-title']"
             :aria-labelledby="$id('modal-title')"
-            class="fixed hidden inset-0 overflow-y-auto"
+            class="fixed inset-0 overflow-y-auto"
         >
             <!-- Overlay -->
             <div x-show="open" x-transition.opacity class="fixed inset-0 bg-gray-700 bg-opacity-50"></div>

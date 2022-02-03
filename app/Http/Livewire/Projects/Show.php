@@ -7,24 +7,19 @@ use Livewire\Component;
 class Show extends Component
 {
 
-    public $project;
-
-    public $addIssue;
+    protected $project;
 
     public function mount($project){
         $this->project = $project;
-        $this->addIssue = false;
+
     }
-    
-    public function addIssueModal(){
-        $this->addIssue = !$this->addIssue;
-    }
+
 
     public function render()
     {
-        // $project = $this->project;
+        $project = $this->project;
         return view('livewire.projects.show',[
-            // 'project' => $project
+            'project' => $project
         ]);
     }
 }

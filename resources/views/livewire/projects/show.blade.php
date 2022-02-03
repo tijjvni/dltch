@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div x-data="{ open: false }">
+    <div class="hidden" x-data="{ open: false }">
         <!-- Button -->
         <button x-on:click="open = true" type="button" class="bg-white border border-black px-4 py-2 focus:outline-none focus:ring-4 focus:ring-aqua-400">
             Open dialog

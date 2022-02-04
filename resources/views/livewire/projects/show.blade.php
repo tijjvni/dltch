@@ -56,13 +56,14 @@
                         <div class="absolute top-0 left-0 w-full h-screen bg-gray-700 opacity-60"
                              aria-hidden="true"
                              x-show="open"></div>
-                        <x-jet-dialog-modal 
+                        <div
                             @click.stop=""
-                             x-show="open">
-                             <x-slot name="title">Modal Title</x-slot>                      
-                             <x-slot name="content">Modal Content</x-slot>                      
-                             <x-slot name="footer">Modal footer</x-slot>                      
-                        </x-jet-dialog-modal>
+                             x-show="open" 
+                             class="p-5 bg-white">
+                             <p name="title">Modal Title</p>                      
+                             <p name="content">Modal Content</p>                      
+                             <p name="footer">Modal footer</p>                      
+                        </div>
                     </div>
                 </div>                
             </div> 

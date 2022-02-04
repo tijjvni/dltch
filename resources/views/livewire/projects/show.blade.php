@@ -53,19 +53,16 @@
                          @click="open = false; $refs.modal1_button.focus()"
                          @click.away="open = false; $refs.modal1_button.focus()"
                          class="fixed top-0 left-0 w-full h-screen flex justify-center items-center">
-                        <div class="absolute top-0 left-0 w-full h-screen bg-black opacity-60"
+                        <div class="absolute top-0 left-0 w-full h-screen bg-gray-700 opacity-60"
                              aria-hidden="true"
                              x-show="open"></div>
-                        <div @click.stop=""
-                             x-show="open"
-                             class="flex flex-col rounded-lg shadow-lg overflow-hidden bg-white w-3/5 h-3/5 z-10">
-                          <div class="p-6 border-b">
-                            <h2 id="modal1_label">Header</h2>
-                          </div>
-                          <div class="p-6">
-                            Content
-                          </div>
-                        </div>
+                        <x-jet-dialog-modal 
+                            @click.stop=""
+                             x-show="open">
+                             <x-slot name="title">Modal Title</x-slot>                      
+                             <x-slot name="content">Modal Content</x-slot>                      
+                             <x-slot name="footer">Modal footer</x-slot>                      
+                        </x-jet-dialog-modal>
                     </div>
                 </div>                
             </div> 

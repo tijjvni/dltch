@@ -38,18 +38,34 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-           
-            <div x-data="{modal: false}">
-                <button class="btn btn-primary mb-3 scroll-lock" @click="modal = !modal" :aria-expanded="modal ? 'true' : 'false'">Modal example</button>
-                <div class="modal-wrapper" :class="{ 'active': modal }">
-                    <div class="backdrop backdrop-shaded"></div>
-                    <div class="modal-panel m-3 p-3 b-thin rounded bg-color-background" :class="{ 'active': modal }">
-                    <p>Modal content.</p>
-                    <button class="float-right scroll-unlock" @click="modal = false">Close</button>
+                <div x-data="{show:false}" class="container flex justify-center mx-auto">
+                    <button @click="show=true" class="px-6 py-2 text-white bg-blue-600 rounded shadow-xl" type="button">open
+                        model</button>
+                    <div x-show="show" class="absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50">
+                        <div @click.away="show = false" class="max-w-sm p-6 bg-white ">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-2xl">Model Title</h3>
+                                <svg @click="show=false" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+
+                            </div>
+                            <div class="mt-4">
+                                <p class="mb-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                                    qui
+                                    nihil laborum
+                                    quaerat blanditiis nemo explicabo voluptatum ea architecto corporis quo vitae, velit
+                                    temporibus eaque quisquam in quis provident necessitatibus.</p>
+                                <button @click="show=false" class="px-4 py-2 text-white bg-red-600 rounded">Cancel</button>
+                                <button class="px-4 py-2 text-white bg-green-600 rounded">Save</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-          
+
+            
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-500 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

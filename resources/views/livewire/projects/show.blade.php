@@ -38,47 +38,44 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                <div x-data="{ open: false }">
-                    <button x-ref="modal1_button"
-                            @click="open = true"
-                            class="w-full bg-indigo-600 px-4 py-2 border border-transparent rounded-md flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto sm:inline-flex">
-                            Open Modal
-                    </button>
-                
-                    <div role="dialog"
-                         aria-labelledby="modal1_label"
-                         aria-modal="true"
-                         tabindex="0"
-                         x-show="open"
-                         @click="open = false; $refs.modal1_button.focus()"
-                         @click.away="open = false; $refs.modal1_button.focus()"
-                         class="fixed top-0 left-0 w-full h-screen flex justify-center items-center">
-                        <div class="absolute top-0 left-0 w-full h-screen bg-gray-700 opacity-60"
-                             aria-hidden="true"
-                             x-show="open"></div>
+           
+                <div
+                x-data="{ 'showModal': false }"
+                @keydown.escape="showModal = false"
+                >
+                    <!-- Trigger for Modal -->
+                    <button type="button" @click="showModal = true">Open Modal</button>
+
+                    <!-- Modal -->
+                    <div
+                        class="fixed inset-0 z-30 flex items-center justify-center overflow-auto bg-black bg-opacity-50"
+                        x-show="showModal"
+                    >
+                        <!-- Modal inner -->
                         <div
-                            @click.stop=""
-                             x-show="open" 
-                             class="p-5 bg-white">
+                            class="max-w-3xl px-6 py-4 mx-auto text-left bg-white rounded shadow-lg"
+                            @click.away="showModal = false"
+                            x-transition:enter="motion-safe:ease-out duration-300"
+                            x-transition:enter-start="opacity-0 scale-90"
+                            x-transition:enter-end="opacity-100 scale-100"
+                        >
+                            <!-- Title / Close-->
+                            <div class="flex items-center justify-between">
+                                <h5 class="mr-3 text-black max-w-none">Title</h5>
 
-
-                             <div class="flex justify-between items-center border-b p-2 text-md">
-                                <h6 class="text-md py-1/5 text-gray-900 font-100">Example of pikaday datepicker </h6>
-                                <button type="button" x-on:click="show = false">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                                <button type="button" class="z-50 cursor-pointer" @click="showModal = false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                     </svg>
                                 </button>
                             </div>
-                            <div class="p-4">
-                                Content
-                            </div>
 
+                            <!-- content -->
+                            <div>Content goes here</div>
                         </div>
-
-                        
                     </div>
-                </div>                
+                </div>
+          
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-500 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

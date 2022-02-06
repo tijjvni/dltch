@@ -38,42 +38,29 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                <div x-data="{show:false}" class="container flex justify-center mx-auto">
+                <div x-data="{ open: @entangle('showDropdown') }" class="container flex justify-center mx-auto">
                     <button 
                     type="button" 
                     class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"  
                     @click="show=true" >
                         Add issue
-                    </button>
-
+                    </button>                    
                     
-                    
-                    <div 
-                        class="absolute inset-0 flex items-center justify-center bg-gray-500 bg-opacity-70" 
-                        x-show="show" 
-                    >
-<!-- 
-                        <div @click.away="show=false" >
+                    <x-jet-dialog-modal wire:model="addIssue">
+                        <x-slot name="title">
+                            <h3 class="text-lg text-primary mb-1">Add Issue</h3>
+                        </x-slot>
+                        <x-slot name="content" >
+                            <x-jet-validation-errors  class="mb-2"/>
 
-                        </div> -->
-                    </div>
+                            <x-jet-label for="amount" value="{{ __('Amount') }}" class="text-lg"/>
+                            <x-jet-input id="amount" class="block mt-1 mb-5 w-full" required placeholder="Enter amount"/>
+                        </x-slot>
+                        <x-slot name="footer" >
+                            <x-jet-button class="flex justify-center w-full font-medium">Add Issue</x-jet-button> 
+                        </x-slot>
+                    </x-jet-dialog-modal>	
                 </div>
-
-
-                <x-jet-dialog-modal wire:model="addIssue">
-                    <x-slot name="title">
-                        <h3 class="text-lg text-primary mb-1">Add Issue</h3>
-                    </x-slot>
-                    <x-slot name="content" >
-                        <x-jet-validation-errors  class="mb-2"/>
-
-                        <x-jet-label for="amount" value="{{ __('Amount') }}" class="text-lg"/>
-                        <x-jet-input id="amount" class="block mt-1 mb-5 w-full" required placeholder="Enter amount"/>
-                    </x-slot>
-                    <x-slot name="footer" >
-                        <x-jet-button class="flex justify-center w-full font-medium">Add Issue</x-jet-button> 
-                    </x-slot>
-                </x-jet-dialog-modal>	
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-500 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

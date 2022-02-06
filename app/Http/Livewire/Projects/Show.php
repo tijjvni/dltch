@@ -13,13 +13,11 @@ class Show extends Component
 
     public function mount($project){
         $this->project = $project;
-        $this->addIssue = false;
-    }
 
+    }
 
     public function addIssueModal(){
-        $this->addIssue = !$this->addIssue;
-    }
+        $this->addIssue = !$this->addIssue;    }
 
     public function render()
     {
@@ -29,3 +27,4 @@ class Show extends Component
         ]);
     }
 }
+

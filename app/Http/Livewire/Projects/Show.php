@@ -15,9 +15,7 @@ class Show extends Component
         $this->project = $project;
 
     }
-
-    public function addIssueModal(){
-        $this->addIssue = !$this->addIssue;    }
+    
 
     public function render()
     {

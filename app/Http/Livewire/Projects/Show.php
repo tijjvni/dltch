@@ -21,6 +21,7 @@ class Show extends Component
     {
         $project = $this->project;
         return view('livewire.projects.show',[
+            
         ]);
     }
 }

@@ -47,7 +47,7 @@
                     </button>
                 
                     <div x-show="show" class="absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50">
-                        <div @click.away="show = false" class="max-w-sm p-6 bg-white ">
+                        <div @click.away="show = false" class="max-w-7xl p-6 bg-white ">
                             @livewire('projects.add-issue')
                         </div>
                     </div>

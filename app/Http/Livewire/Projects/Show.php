@@ -23,7 +23,7 @@ class Show extends Component
 
     public function render()
     {
-        $project = $thiis->project;
+        $project = $this->project;
         return view('livewire.projects.show',[
             'project' => $project
         ]);

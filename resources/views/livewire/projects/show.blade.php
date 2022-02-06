@@ -60,7 +60,7 @@
                 </div>
 
 
-                <x-jet-dialog-modal wire:model="quicksaveModal">
+                <x-jet-dialog-modal wire:model="addIssue">
                     <x-slot name="title">
                         <h3 class="text-lg text-primary mb-1">Add Issue</h3>
                     </x-slot>

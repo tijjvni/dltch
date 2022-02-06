@@ -12,7 +12,7 @@ class Show extends Component
     public $addIssue;
 
     public function mount($project){
-       dd($this->project = $project);
+        $this->project = $project;
         $this->addIssue = false;
     }
 
@@ -23,7 +23,7 @@ class Show extends Component
 
     public function render()
     {
-        $project = $this->project;
+
         return view('livewire.projects.show',[
 
         ]);

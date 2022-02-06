@@ -12,10 +12,14 @@ class Show extends Component
     public $addIssue;
 
     public function mount($project){
-        $this->project = $project;
-        $this->addIssue = true;
+       dd($this->project = $project);
+        $this->addIssue = false;
     }
 
+
+    public function addIssueModal(){
+        $this->addIssue = !$this->addIssue;
+    }
 
     public function render()
     {

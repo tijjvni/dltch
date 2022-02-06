@@ -47,7 +47,7 @@
                     </button>
                 
                     <div 
-                        class="absolute hidden inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50" 
+                        class="absolute inset-0 flex items-center justify-center bg-gray-500 bg-opacity-70" 
                         x-show="show" 
                     >
                         <div @click.away="show = false" class="max-w-7xl p-6 bg-white rounded">

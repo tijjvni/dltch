@@ -59,26 +59,21 @@
                     </div>
                 </div>
 
-                <x-jet-dialog-modal>
-                                <x-slot name="title">
-                                    Delete Account
-                                </x-slot>
 
-                                <x-slot name="content">
-                                    Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted.
-                                </x-slot>
+                <x-jet-dialog-modal wire:model="quicksaveModal">
+                    <x-slot name="title">
+                        <h3 class="text-lg text-primary mb-1">Add Issue</h3>
+                    </x-slot>
+                    <x-slot name="content" >
+                        <x-jet-validation-errors  class="mb-2"/>
 
-                                <x-slot name="footer">
-                                    <x-jet-secondary-button wire:click="$toggle('confirmingUserDeletion')" wire:loading.attr="disabled">
-                                        Nevermind
-                                    </x-jet-secondary-button>
-
-                                    <x-jet-danger-button class="ml-2" wire:click="deleteUser" wire:loading.attr="disabled">
-                                        Delete Account
-                                    </x-jet-danger-button>
-                                </x-slot>
-                            </x-jet-dialog-modal>
-            
+                        <x-jet-label for="amount" value="{{ __('Amount') }}" class="text-lg"/>
+                        <x-jet-input id="amount" class="block mt-1 mb-5 w-full" required placeholder="Enter amount"/>
+                    </x-slot>
+                    <x-slot name="footer" >
+                        <x-jet-button class="flex justify-center w-full font-medium">Add Issue</x-jet-button> 
+                    </x-slot>
+                </x-jet-dialog-modal>	
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-500 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

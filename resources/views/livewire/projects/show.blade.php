@@ -48,24 +48,7 @@
                 
                     <div x-show="show" class="absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50">
                         <div @click.away="show = false" class="max-w-sm p-6 bg-white ">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-2xl">Model Title</h3>
-                                <svg @click="show=false" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-
-                            </div>
-                            <div class="mt-4">
-                                <p class="mb-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
-                                    qui
-                                    nihil laborum
-                                    quaerat blanditiis nemo explicabo voluptatum ea architecto corporis quo vitae, velit
-                                    temporibus eaque quisquam in quis provident necessitatibus.</p>
-                                <button @click="show=false" class="px-4 py-2 text-white bg-red-600 rounded">Cancel</button>
-                                <button class="px-4 py-2 text-white bg-green-600 rounded">Save</button>
-                            </div>
+                            @livewire('projects.add-issue')
                         </div>
                     </div>
                 </div>
@@ -114,13 +97,5 @@
         </div>
     </div>
 
-    <div x-data="{ open: false }">
-        <!-- Button -->
-        <button x-on:click="open = true" type="button" class="bg-white border border-black px-4 py-2 focus:outline-none focus:ring-4 focus:ring-aqua-400">
-            Open dialog
-        </button>
-        
-        
     
-    </div>
 </div>

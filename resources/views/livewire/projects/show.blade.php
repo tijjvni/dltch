@@ -39,21 +39,7 @@
             </div>
             <div class="flex-initial justify-end">
                 <div class="container flex justify-center mx-auto">
-                    <button wire:click="addIssueModal">
-                        Add issue
-                    </button>                    
-                    
-                    <x-jet-dialog-modal wire:model="addIssue">
-                        <x-slot name="title">
-                            <h3 class="text-lg text-primary mb-1">Add Issue</h3>
-                        </x-slot>
-                        <x-slot name="content" >
-                            @livewire('projects.add-issue')
-                        </x-slot>
-                        <x-slot name="footer" >
-                        </x-slot>
-                        </x-slot>
-                    </x-jet-dialog-modal>	
+
                 </div>
             </div> 
         </div>

@@ -38,11 +38,8 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                <div x-data="{ show: @entangle('addIssue') }" class="container flex justify-center mx-auto">
-                    <button 
-                    type="button" 
-                    class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"  
-                    @click="show=true" >
+                <div class="container flex justify-center mx-auto">
+                    <button wire:click="addIssuModal">
                         Add issue
                     </button>                    
                     
@@ -51,17 +48,7 @@
                             <h3 class="text-lg text-primary mb-1">Add Issue</h3>
                         </x-slot>
                         <x-slot name="content" >
-                            <x-jet-validation-errors  class="mb-2"/>
-
-                            <x-jet-label for="amount" value="{{ __('Amount') }}" class="text-lg"/>
-                            <x-jet-input id="amount" class="block mt-1 mb-5 w-full" required placeholder="Enter amount"/>
-                        </x-slot>
-                        <x-slot name="footer" >
-                            <button
-                            class="inline-flex justify-center w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700"
-                            @click="show = false">
-                                Close this modal!
-                            </button>
+                            @livewire('projects.add-issue')
                         </x-slot>
                     </x-jet-dialog-modal>	
                 </div>

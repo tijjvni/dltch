@@ -13,7 +13,7 @@
             <!-- Title -->
             <div class="col-span-6 sm:col-span-4">
                 <x-jet-label for="title" value="{{ __('Title') }}" />
-                <x-jet-input id="title" type="text" class="mt-1 block w-full" wire:model.defer="title" autocomplete="title" />
+                <x-jet-input id="title" type="text" class="mt-1 block w-full" autocomplete="title" />
                 <x-jet-input-error for="title" class="mt-2" />
             </div>
 

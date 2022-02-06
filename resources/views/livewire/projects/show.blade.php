@@ -39,7 +39,7 @@
             </div>
             <div class="flex-initial justify-end">
                 <div class="container flex justify-center mx-auto">
-                    <button wire:click="addIssuModal">
+                    <button wire:click="addIssueModal">
                         Add issue
                     </button>                    
                     

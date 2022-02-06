@@ -7,12 +7,13 @@ use Livewire\Component;
 class Show extends Component
 {
 
-    protected $project;
+    public $project;
 
     public $addIssue;
 
     public function mount($project){
         $this->project = $project;
+        $this->addIssue = false;
     }
 
 
@@ -20,7 +21,6 @@ class Show extends Component
     {
         $project = $this->project;
         return view('livewire.projects.show',[
-            'project' => $project
         ]);
     }
 }

@@ -17,7 +17,7 @@ class Show extends Component
     }
     
     public function addIssueModal(){
-        $this->addIssue = !$this->addIssue;
+        $this->addIssue = true;
     } 
 
     public function render()

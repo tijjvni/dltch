@@ -22,9 +22,7 @@
                 <x-jet-label for="client" value="{{ __('Client') }}" />
                 <select id="client" class="mt-1 block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" wire:model.defer="client">
                     <option>Select client</option>
-                    @foreach ($clients as $clientale)
-                        <option value="{{ $clientale->id }}">{{$clientale->name}}</option>
-                    @endforeach
+                    
                 </select>
                 <x-jet-input-error for="client" class="mt-2" />
             </div>

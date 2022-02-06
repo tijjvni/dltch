@@ -50,6 +50,9 @@
                         <x-slot name="content" >
                             @livewire('projects.add-issue')
                         </x-slot>
+                        <x-slot name="footer" >
+                        </x-slot>
+                        </x-slot>
                     </x-jet-dialog-modal>	
                 </div>
             </div> 

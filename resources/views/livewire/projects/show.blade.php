@@ -52,10 +52,14 @@
                         class="absolute inset-0 flex items-center justify-center bg-gray-500 bg-opacity-70" 
                         x-show="show" 
                     >
-
+<!-- 
                         <div @click.away="show=false" >
 
-                            <x-jet-dialog-modal>
+                        </div> -->
+                    </div>
+                </div>
+
+                <x-jet-dialog-modal>
                                 <x-slot name="title">
                                     Delete Account
                                 </x-slot>
@@ -74,10 +78,6 @@
                                     </x-jet-danger-button>
                                 </x-slot>
                             </x-jet-dialog-modal>
-                        </div>
-                    </div>
-                </div>
-
             
             </div> 
         </div>

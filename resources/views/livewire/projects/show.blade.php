@@ -57,7 +57,9 @@
                             <x-jet-input id="amount" class="block mt-1 mb-5 w-full" required placeholder="Enter amount"/>
                         </x-slot>
                         <x-slot name="footer" >
-                            <button @click="show = false" class="inline-flex justify-center w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700">
+                            <button
+                            class="inline-flex justify-center w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700"
+                            @click="show = false">
                                 Close this modal!
                             </button>
                         </x-slot>

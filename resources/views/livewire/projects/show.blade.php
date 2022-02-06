@@ -46,7 +46,10 @@
                         Add issue
                     </button>
                 
-                    <div x-show="show" class="absolute inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50">
+                    <div 
+                        class="absolute hidden inset-0 flex items-center justify-center bg-gray-700 bg-opacity-50" 
+                        x-show="show" 
+                    >
                         <div @click.away="show = false" class="max-w-7xl p-6 bg-white rounded">
                             @livewire('projects.add-issue')
                         </div>

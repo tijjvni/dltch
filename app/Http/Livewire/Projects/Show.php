@@ -9,16 +9,16 @@ class Show extends Component
 
     public $project;
 
-    public $addIssue;
-
     public function mount($project){
         $this->project = $project;
         $this->addIssue = false;
     }
-    
-    public function addIssueModal(){
-        $this->addIssue = true;
-    } 
+
+    public $addIssue = false;
+    public function addIssue()
+    {
+        $this->addIssue = !$this->addIssue;
+    }  
 
     public function render()
     {

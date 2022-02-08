@@ -1,3 +1,5 @@
+@props(['title' => null])
+
 <div x-data="{ 
         open: @entangle($attributes->wire('model'))
     }" 
@@ -12,8 +14,25 @@
         </div>
         <div 
         @click.away="open = false"  
-        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto maax-w-7xl">
+        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto max-w-7xl">
             {{ $slot }}
+            <div class="px-6 py-4">
+                @if($title)
+                    <div class="text-lg">
+                        {{ $title }}
+                    </div>
+                @endif
+                <div class="p-4">
+                    {{ $content }}
+                </div>
+            </div>
+
+            @if($footer)
+                <div class="flex flex-row justify-end px-6 py-4 bg-gray-100 text-right">
+                    {{ $footer }}
+                </div>
+            @endif
+
         </div>
     </div>
 </div>

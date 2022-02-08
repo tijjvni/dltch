@@ -1,5 +1,5 @@
 <div x-data="{ 
-        open: false
+        open: @entangle('some')
     }" 
     @close-modal.window="open = false" @keydown.escape.window="open = false" class="modal">
     <div @click="open = true">

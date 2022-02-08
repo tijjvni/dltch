@@ -38,12 +38,7 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                <x-modal wire:model="show">
-                    <x-slot name="trigger">
-                        <button x-data="{}" x-on:click="window.livewire.emitTo('projects.add-issue','show')" class="tetxt-indigo-400">Add Issue</button>
-                    </x-slot>
-                    @livewire('projects.add-issue')
-                </x-modal>
+                @livewire('projects.add-issue')
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-500 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

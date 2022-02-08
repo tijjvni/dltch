@@ -1,5 +1,9 @@
 <div>
-        <x-jet-form-section submit="createIssue">
+    <x-modal wire:model="show">
+        <x-slot name="trigger">
+            <button x-data="{}" x-on:click="window.livewire.emitTo('projects.add-issue','show')" class="tetxt-indigo-400">Add Issue</button>
+        </x-slot>
+          <x-jet-form-section submit="createIssue">
             <x-slot name="title">
                 {{ __('Issue Information') }}
             </x-slot>
@@ -48,5 +52,6 @@
                 </x-jet-button>
             </x-slot>
         </x-jet-form-section>
-        
+
+    </x-modal> 
 </div>

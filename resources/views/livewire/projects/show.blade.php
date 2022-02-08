@@ -38,6 +38,7 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
+                <button x-data="{}" x-on:click="window.livewire.emitTo('projects.add-issue','show')" class="tetxt-indigo-400">Add Issue</button>
                 @livewire('projects.add-issue')
             </div> 
         </div>

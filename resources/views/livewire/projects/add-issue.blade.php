@@ -1,5 +1,4 @@
 <div>
-    <x-modal wire:model="show">
         <x-jet-form-section submit="createIssue">
             <x-slot name="title">
                 {{ __('Issue Information') }}
@@ -49,6 +48,5 @@
                 </x-jet-button>
             </x-slot>
         </x-jet-form-section>
-
-    </x-modal> 
+        
 </div>

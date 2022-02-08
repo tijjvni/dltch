@@ -14,7 +14,7 @@
         </div>
         <div 
         @click.away="open = false"  
-        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto max-w-7xl">
+        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto max-w-6xl">
             
             <div class="px-6 py-4">
                 @if($title)

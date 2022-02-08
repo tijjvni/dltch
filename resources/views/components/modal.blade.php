@@ -12,7 +12,7 @@
         </div>
         <div 
         @click.away="open = false"  
-        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full {{ $maxWidth }} sm:mx-auto">
+        class="mb-6 bg-white rounded-lg overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto maax-w-7xl">
             {{ $slot }}
         </div>
     </div>

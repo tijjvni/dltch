@@ -1,5 +1,5 @@
 <div x-data="{ 
-        open: @entangle('some')
+        open: @entangle($attributes->wire('model'))
     }" 
     @close-modal.window="open = false" @keydown.escape.window="open = false" class="modal">
     <div @click="open = true">

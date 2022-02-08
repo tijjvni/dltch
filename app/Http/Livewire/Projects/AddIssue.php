@@ -7,8 +7,8 @@ use Livewire\Component;
 class AddIssue extends Component
 {
 
-    public $show;
-    
+    public $show = false;
+
     public function render()
     {
         return view('livewire.projects.add-issue');

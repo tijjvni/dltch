@@ -6,15 +6,15 @@ use Livewire\Component;
 
 class Modal extends Component
 {
-    public $show = false;
+ 
+  public $show = false;
 
-    protected $listeners = [
+  protected $listeners = [
       'show' => 'show'
-    ];
-    
-    public function show()
-    {
+  ];
+
+  public function show(){
       $this->show = true;
-    }
-    
+  }
+
 }

@@ -1,4 +1,7 @@
-<div x-data="{ open: @entangle($attributes->wire('model)) }" @close-modal.window="open = false" @keydown.escape.window="open = false" class="modal">
+<div x-data="{ 
+        open: @entangle($attributes->wire('model))
+    }" 
+    @close-modal.window="open = false" @keydown.escape.window="open = false" class="modal">
     <div @click="open = true">
         {{ $trigger }}
     </div>

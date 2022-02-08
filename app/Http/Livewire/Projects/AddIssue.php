@@ -2,10 +2,13 @@
 
 namespace App\Http\Livewire\Projects;
 
-use LivewireUI\Modal\ModalComponent;
+use Livewire\Component;
 
-class AddIssue extends ModalComponent
+class AddIssue extends Component
 {
+
+    public $show;
+    
     public function render()
     {
         return view('livewire.projects.add-issue');

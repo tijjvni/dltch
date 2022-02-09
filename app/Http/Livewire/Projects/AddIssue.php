@@ -17,7 +17,11 @@ class AddIssue extends Modal
     public $summary;
 
     public function addIssue(){
-        dd('$summary');
+        $this->validate([
+            'title' => 'required|string|max:255',
+            'summary' => 'required|string|max:255',
+            'priority' => 'required',
+        ]);
     }
 
     public function render()

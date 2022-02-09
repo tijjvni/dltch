@@ -12,11 +12,15 @@ class AddIssue extends Modal
 
     public Project $project;
 
+    public function mount(){
+        dd('tj');
+    }
     public $title;
     public $priority;
     public $summary;
 
     public function addIssue(){
+        
         $this->validate([
             'title' => 'required|string|max:255',
             'summary' => 'required|string|max:255',

@@ -22,14 +22,14 @@
                 <!-- Title -->
                 <div class="col-span-6 sm:col-span-4">
                     <x-jet-label for="title" value="{{ __('Title') }}" />
-                    <x-jet-input wire:model="title" id="title" type="text" class="mt-1 block w-full" autocomplete="title"/>
+                    <x-jet-input wire:model.defer="title" id="title" type="text" class="mt-1 block w-full" autocomplete="title"/>
                     <x-jet-input-error for="title" class="mt-2" />
                 </div>
 
                 <!-- priotity -->
                 <div class="col-span-6 sm:col-span-4">
                     <x-jet-label for="priotity" value="{{ __('Priority') }}" />
-                    <select wire:model="priority" id="priotity" class="mt-1 block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" wire:model.defer="client">
+                    <select wire:model.defer="priority" id="priotity" class="mt-1 block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" wire:model.defer="client">
                         <option>Select issue priotity</option>
                         <option value="1">Low</option>
                         <option value="2">Medium</option>
@@ -42,7 +42,7 @@
                 <!-- Summary -->
                 <div class="col-span-6 sm:col-span-4">
                     <x-jet-label for="summary" value="{{ __('Summary') }}" />
-                    <textarea wire:model="summary" id="summary" class="mt-1 block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm" wire:model.defer="description"></textarea>
+                    <textarea wire:model.defer="summary" id="summary" class="mt-1 block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"></textarea>
                     <x-jet-input-error for="summary" class="mt-2" />
                 </div>
 

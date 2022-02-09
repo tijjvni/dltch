@@ -1,5 +1,8 @@
 <div>
-    <x-modal wire:model="show" :title="{{$project->title}}: Add Issue">
+    <x-modal wire:model="show">
+        <x-slot name="title">
+            {{ $project->title }}: Add Issue
+        </x-slot>
         <x-slot name="trigger">
             <button x-data="{}" x-on:click="window.livewire.emitTo('projects.add-issue','show')" class="tetxt-indigo-400">Add Issue</button>
         </x-slot>

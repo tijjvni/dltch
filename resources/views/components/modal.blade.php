@@ -1,4 +1,3 @@
-@props(['title' => null])
 
 <div x-data="{ 
         open: @entangle($attributes->wire('model'))

@@ -17,7 +17,7 @@ class AddIssue extends Modal
     public $summary;
 
     public function addIssue(){
-        dd($summary);
+        dd('$summary');
     }
 
     public function render()

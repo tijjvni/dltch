@@ -12,8 +12,12 @@ class AddIssue extends Modal
 
     public Project $project;
 
+    public $title;
+    public $priority;
+    public $summary;
+
     public function addIssue(){
-        return redirect()->to(route('/projects/'.$this->project->id));
+        dd($summary);
     }
 
     public function render()

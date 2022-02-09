@@ -8,7 +8,7 @@
                 Add Issue
             </x-jet-secondary-button>
         </x-slot>
-          <x-jet-form-section >
+          <x-jet-form-section  submit="addIssue">
             <x-slot name="title">
                 {{ __('Issue Information') }}
             </x-slot>

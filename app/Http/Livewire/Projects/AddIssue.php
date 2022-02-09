@@ -13,7 +13,7 @@ class AddIssue extends Modal
     public Project $project;
 
     public function mount(){
-        $this->addIssue();
+
     }
 
     public $title;

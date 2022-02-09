@@ -4,11 +4,11 @@
             {{ $project->title }}: Add Issue
         </x-slot>
         <x-slot name="trigger">
-            <x-jet-secondary-button >
+            <x-jet-secondary-button>
                 Add Issue
             </x-jet-secondary-button>
         </x-slot>
-          <x-jet-form-section submit="addIssue">
+          <x-jet-form-section >
             <x-slot name="title">
                 {{ __('Issue Information') }}
             </x-slot>
@@ -53,7 +53,7 @@
                     {{ __('Issue added successfully.') }}
                 </x-jet-action-message>
 
-                <x-jet-button wire:loading.attr="disabled" wire:target="addIssue">
+                <x-jet-button  wire:click="addIssue">
                     <i wire:loading  wire:target="addIssue" class="fa fa-spinner fa-spin"></i>
                     {{ __('Save') }}
                 </x-jet-button>

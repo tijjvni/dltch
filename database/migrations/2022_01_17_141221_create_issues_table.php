@@ -11,7 +11,7 @@ class CreateIssuesTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
         Schema::disableForeignKeyConstraints();
 

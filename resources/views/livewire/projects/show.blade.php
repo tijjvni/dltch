@@ -24,8 +24,7 @@
             </strong>      
         </div>
     </div>
-    <!-- Code block ends -->
-    
+
 
     <div class="container flex flex-col mx-auto w-full items-center justify-center">
         <div class="px-4 py-5 sm:px-6 flex w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
@@ -38,7 +37,7 @@
                 </p>
             </div>
             <div class="flex-initial justify-end">
-                @livewire('projects.add-issue')
+                @livewire('projects.add-issue', ['project' => $project])
             </div> 
         </div>
         <div class="px-4 py-5 sm:px-6 flex flex-col divide-y divide-gray-500 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">

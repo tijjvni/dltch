@@ -4,7 +4,9 @@
             {{ $project->title }}: Add Issue
         </x-slot>
         <x-slot name="trigger">
-            <button x-data="{}" x-on:click="window.livewire.emitTo('projects.add-issue','show')" class="tetxt-indigo-400">Add Issue</button>
+            <x-jet-button wire:loading.attr="disabled" wire:click="addIssue">
+                Add Issue
+            </x-button>
         </x-slot>
           <x-jet-form-section submit="addIssue">
             <x-slot name="title">
@@ -33,7 +35,7 @@
                         <option value="2">Medium</option>
                         <option value="3">High</option>                    
                     </select>
-                    <x-jet-input-error for="priotity" class="mt-2" />
+                    <x-jet-input-error for="priority" class="mt-2" />
                 </div>
 
 

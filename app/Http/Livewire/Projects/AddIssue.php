@@ -27,6 +27,8 @@ class AddIssue extends Modal
             'summary' => 'required|string|max:255',
             'priority' => 'required',
         ]);
+
+        return redirect()->route('products.index');
     }
 
     public function render()

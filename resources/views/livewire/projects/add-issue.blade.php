@@ -4,7 +4,7 @@
             {{ $project->title }}: Add Issue
         </x-slot>
         <x-slot name="trigger">
-            <x-jet-secondary-button wire:click="addIssue">
+            <x-jet-secondary-button >
                 Add Issue
             </x-jet-secondary-button>
         </x-slot>
